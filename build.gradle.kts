@@ -118,7 +118,7 @@ testing {
         integrationTest {
             val testContainersVersion = "1.17.5"
             dependencies {
-                implementation(project)
+                implementation(project())
                 implementation("org.testcontainers:testcontainers:$testContainersVersion")
                 implementation("org.testcontainers:junit-jupiter:$testContainersVersion")
                 implementation("org.testcontainers:kafka:$testContainersVersion")
